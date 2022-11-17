@@ -1,0 +1,87 @@
+.buy
+  display: none
+  // position: fixed
+  &_hidden
+    display: block
+  &::before
+    content: ' '
+    background-color: rgba(83, 165, 155, 0.4)
+    position: absolute
+    top: 0px
+    right: 0px
+    left: 0px
+    bottom: 0px
+    z-index: 1000
+    position: fixed
+  &_wrapper
+    justify-content: center
+    display: flex
+    flex-direction: column
+    left: 0px
+    top: 50%
+    right: 0px
+    margin: auto
+
+    border: 2px solid black
+    z-index: 1000
+    position: fixed
+    width: 500px
+    height: 250px
+    &::before
+      content: ' '
+      background-color: #2221219d
+      width: 500px
+      height: 252px
+      position: absolute
+      z-index: -1
+      left: 0px
+      right: 0px
+      margin: auto
+
+  &_name
+    width: 200px
+    height: 30px
+    text-align: center
+    margin: 0 auto
+    margin-top: 20px
+  &_surname
+    width: 200px
+    height: 30px
+    text-align: center
+    margin: 20px auto
+  &_card
+    width: 300px
+    height: 30px
+    text-align: center
+    margin: 20px auto
+    &__number
+      text-align: center
+      color: $colorOrange
+.close
+  position: absolute
+  top: 0px
+  right: 0px
+  left: 0px
+  font-size: 20px
+  color: white
+  transition: all 0.3s ease-out
+  &:hover
+    color: $colorOrange
+  &_wrapper
+    position: relative
+    top: -207px
+    left: 472px
+.button
+  &_go
+    text-transform: uppercase
+    width: 70px
+    height: 35px
+    margin: 0 auto
+    margin-bottom: 10px
+    transition: all 0.3s ease-out
+    border: none
+    border-radius: 10px
+    filter: drop-shadow(0px 1px 30px rgba(26, 10, 3, 0.05))
+    &:hover
+      background: $colorOrange
+      color: #fff

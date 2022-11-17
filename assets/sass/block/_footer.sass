@@ -1,0 +1,157 @@
+.footer
+  display: flex
+  margin-top: 100px
+  justify-content: space-between
+  flex-wrap: wrap
+  padding-right: 15px
+  padding-left: 15px
+  position: relative
+  &::after
+    top: 0px
+    left: 0px
+    right: 0px
+    // bottom: 0px
+    // width: 100%
+    min-height: 450px
+    content: ' '
+    display: block
+    position: absolute
+    background-color: $colorOrange
+    opacity: 0.04
+    z-index: -1
+  &_logo
+    max-width: 94px
+    max-height: 44px
+  &_adress
+    padding-top: 20px
+  &_text
+    width: 55%
+    font-size: 18px
+    line-height: 1.6
+    color: $colorDark
+    opacity: 0.7
+    margin-top: 25px
+  &_mail
+    font-size: 18px
+    line-height: 1.6
+    color: $colorDark
+    opacity: 0.7
+    margin-top: 20px
+    margin-bottom: 10px
+  &_title
+    font-size: 18px
+    line-height: 160%
+    color: $colorDark
+.social
+  &_list
+    display: flex
+    gap: 25px
+    justify-content: start
+    &__item
+      list-style-type: none
+.services
+  padding-top: 10px
+  text-align: center
+  color: $colorDark
+  font-size: 16px
+  line-height: 160%
+  &_about
+    margin-top: 35px
+    font-size: 18px
+    line-height: 160%
+    opacity: 0.7
+  &_feature
+    margin-top: 10px
+    font-size: 18px
+    line-height: 160%
+    opacity: 0.7
+  &_gallary
+    margin-top: 15px
+    font-size: 18px
+    line-height: 160%
+    opacity: 0.7
+.support
+  padding-top: 10px
+  &_privacy
+    margin-top: 35px
+    font-size: 18px
+    line-height: 160%
+    opacity: 0.7
+  &_terms
+    margin-top: 10px
+    font-size: 18px
+    line-height: 160%
+    opacity: 0.7
+  &_system
+    margin-top: 16px
+    font-size: 18px
+    line-height: 160%
+    opacity: 0.7
+.contact
+  padding-top: 10px
+  max-width: 320px
+  &_text
+    max-width: 250px
+    font-size: 18px
+    line-height: 1.6
+    color: $colorDark
+    opacity: 0.7
+    margin-top: 35px
+  &_form
+    margin-top: 40px
+    height: 50px
+    &__input
+      padding-left: 17px
+      width: 300px
+      height: 52px
+      border: 1px solid rgba(0, 0, 0, 0.1)
+      border-radius: 5px
+    &__send
+      padding: 19px 30px
+      font-size: 14px
+      line-height: 1.2
+  &_button
+    &_wrapper
+      position: absolute
+      top: 18px
+      right: 0px
+  &_wrap
+    position: relative
+    // padding-bottom: 330px
+    top: -25px
+.copyright
+  text-align: center
+  margin-top: 30px
+h5
+  margin: 0
+  padding: 0
+  font-size: 18px
+ul
+  margin: 0
+  padding: 0
+
+hr
+  margin-top: 40px
+  opacity: 0.2
+
+@media screen and ( max-width: 920px )
+  .footer
+    width: 100%
+    justify-content: center
+    text-align: center
+    &_adress
+      width: 100%
+    &_text
+      width: 100%
+  .contact
+    width: 100%
+  .support
+    width: 100%
+  .services
+    width: 100%
+  .footer_adress
+    width: 100%
+  .social_list
+    justify-content: center
+.footer::after
+  min-height: 100%

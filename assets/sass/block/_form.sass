@@ -1,0 +1,101 @@
+.form
+  &_img
+    width: 488px
+    height: 334px
+    border: 1px solid #000000
+    border-radius: 10px 0px 0px 10px
+  &_wraper
+    display: flex
+    margin-top: 140px
+    max-height: 400px
+  &_box
+    max-width: 480px
+    margin: 0 auto
+    &::after
+      position: absolute
+      top: 0px
+      bottom: 0px
+      right: 0px
+      left: 0px
+      display: block
+      // width: 650px
+      // height: 335px
+      content: ' '
+      background: #81A8DA
+      opacity: 0.1
+      border-radius: 0px 10px 10px 0px
+      z-index: -1
+  &_title
+    font-family: 'Source Serif Pro'
+    font-weight: 600
+    font-size: 31px
+    color: $colorDark
+    text-align: left
+    margin-top: 63px
+  &_text
+    font-size: 18px
+    color: $colorDark
+    opacity: 0.7
+    margin-top: 20px
+
+  &_get
+    margin-top: 40px
+  &_send
+    padding: 19px 37px
+    position: absolute
+    top: 0px
+    right: 0px
+  &_input
+    width: 100%
+    height: 51px
+    border: 1px solid rgba(0, 0, 0, 0.2)
+    border-radius: 5px
+    // text-align: left
+    &::placeholder
+      padding-left: 30px
+      padding-top: 15px
+      color: $colorDark
+      opacity: 0.5
+      font-size: 14px
+
+.button_send
+  background: #EE5514
+  border-radius: 0px 5px 5px 0px
+  font-weight: 500
+  font-size: 14px
+  text-align: center
+  color: #FFFFFF
+  &:hover
+    background-color: blue
+.form-pos
+  position: relative
+  top: -55px
+  right: -5px
+@media screen and ( max-width: 920px )
+  .form
+
+    &_wraper
+      margin-top: 100px
+      width: 100%
+      max-height: 100%
+      flex-direction: column
+    &_img
+      width: 100%
+      height: 100%
+      border-radius: 10px 10px 10px 10px
+    &_box
+      max-width: 100%
+      position: relative
+      &::after
+        width: 100%
+        height: 100%
+
+    &_title
+      margin-bottom: 20px
+      text-align: center
+      font-size: 40px
+    &_text
+      font-size: 25px
+      text-align: center
+    &_get
+      text-align: center

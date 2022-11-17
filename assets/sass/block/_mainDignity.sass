@@ -1,0 +1,100 @@
+.dignity
+  &_wraper
+  &_header
+    margin-top: 140px
+    text-align: center
+    &_p
+      font-family: 'Source Serif Pro'
+      font-weight: 600
+      font-size: 20px
+      color: $colorOrange
+      margin-bottom: 10px
+  &_card
+    display: flex
+    justify-content: space-between
+    margin-top: 60px
+
+    &__text
+      // max-width: 240px
+      // min-height: 45px
+      font-size: 14px
+      margin: 0 auto
+      text-align: center
+      width: 65%
+    &__read
+      text-align: center
+      margin-top: 20px
+    // &__read
+    //   position: relative
+    //   top: 1px
+    //   right: 0px
+    //   width: 8px
+    //   height: 4px
+.card
+  // min-width: 360px
+  // min-height: 425px
+  // width: 33%
+  background: #FFFFFF
+  box-shadow: 0px 1px 30px rgba(26, 10, 3, 0.05)
+  border-radius: 10px
+  padding-bottom: 56px
+  transition: 0.5s
+  &:hover
+    background: rgba(221, 110, 62, 0.2)
+    // opacity: 0.1
+    // z-index: -1
+  &_logo
+    width: 140px
+    height: 140px
+    margin: 55px auto 40px
+  &_text
+    margin-top: 10px
+  &_read
+    font-weight: 500
+    font-size: 16px
+    color: $colorOrange
+    transition: all 0.3s ease-out
+    &:hover
+      color: blue
+      // background-color: blue
+    &__arrow
+      position: relative
+      top: 1px
+      right: -10px
+      width: 8px
+      height: 4px
+
+h3
+  margin: 0
+  text-align: center
+  font-family: 'Source Serif Pro'
+  font-weight: 600
+  font-size: 22px
+  color: $colorDark
+
+@media screen and ( max-width: 920px )
+  .dignity
+    &_wraper
+      width: 100%
+    &_header
+      margin-top: 100px
+      &_p
+        font-size: 30px
+    &_card
+      flex-wrap: wrap
+      &__text
+        width: 20%
+  .card
+    width: 100%
+  h3
+    font-size: 30px
+//     font-size: 30px
+//   .dignity_card
+//     flex-direction: column
+//  
+//   .card_text
+//     font-size: 30px
+//   .card_read
+//     font-size: 30px
+//   .card
+//     min-height: 540px

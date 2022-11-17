@@ -380,11 +380,11 @@ h2 {
   width: 25%;
 }
 
-.play_preview {
+/* .play_preview {
   position: relative;
   top: -70%;
   right: 0px;
-}
+} */
 
 @media screen and (max-width: 920px) {
   .main_wraper {
